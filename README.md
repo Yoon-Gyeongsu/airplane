@@ -1,3 +1,2 @@
-# airplane
-kumin
-yeunHa
+# 항공기예약시스템
+팀원: 박규민, 윤경수, 주연하
