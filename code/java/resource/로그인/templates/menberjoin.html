@@ -1,0 +1,60 @@
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+	<title>로그인</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body th:align="center">
+<h1>로그인</h1>
+<form th:action="@{/menberjoin}" method="post"> 
+<table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">				
+	<tr>
+		<td bgcolor="#00FFFF" th:text="아이디" width="80">아이디</td>
+		<td><input name="id" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="비밀번호"></td>
+		<td><input name="password" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="이름" width="80"></td>
+		<td><input name="nameKor" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="영어이름" width="80"></td>
+		<td><input name="nameEng" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="생년월일"></td>
+		<td><input name="birth" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="성별"></td>
+		<td>
+			<input id="man" name="gender" type="radio" value="m">
+			<label for="man">남자</label>
+			<input id="woman" name="gender" type="radio" value="w">
+			<label for="man">여자</label>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="이메일"></td>
+		<td><input name="email" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="주소"></td>
+		<td><input name="address" type="text" size="50"></td>
+	</tr>
+		<tr>
+		<td bgcolor="#00FFFF" th:text="국가"></td>
+		<td><input name="country" type="text" size="50"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#00FFFF" th:text="휴대전화"></td>
+		<td><input name="phoneNum" type="text" size="50"></td>
+	</tr>
+</table>
+<br>
+<input type="submit" value="가입" style="width:455px">
+</html>
